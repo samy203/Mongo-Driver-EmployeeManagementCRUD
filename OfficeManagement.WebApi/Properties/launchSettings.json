@@ -1,0 +1,37 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:2620",
+      "sslPort": 44302
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DATABASE_NAME": "OfficeManagementDB",
+        "EMPLOYEES_COLLECTION_NAME": "Employees",
+        "DEPARTMENTS_COLLECTION_NAME" : "Departments"
+      }
+    },
+    "OfficeManagement.WebApi": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DATABASE_NAME": "OfficeManagementDB",
+        "EMPLOYEES_COLLECTION_NAME": "Employees",
+        "DEPARTMENTS_COLLECTION_NAME": "Departments"
+      }
+    }
+  }
+}
